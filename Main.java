@@ -1,13 +1,16 @@
 package com.company;
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter new radius of circle");
-        double r = scanner.nextDouble();
-        Circle circ = new Circle(4);
-        circ.setR(r);
-        System.out.println("New radius is:"+circ.getR());
 
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Enter coordinates x,y where u want to move ur ballz");
+        Scanner scanner = new Scanner(System.in);
+        double xDisp = scanner.nextDouble();
+        double yDisp = scanner.nextDouble();
+        Ball b1 = new Ball(30,100);
+        System.out.println(b1);
+        b1.move(xDisp,yDisp);
+        System.out.println(b1);
     }
 }
+
